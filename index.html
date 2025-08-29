@@ -98,7 +98,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -144,7 +146,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/police.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -190,7 +194,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -236,7 +242,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -282,7 +290,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/ambulance.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -328,7 +338,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/brac.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -377,7 +389,9 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -423,7 +437,9 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -472,7 +488,9 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
+                <i
+                  class="text-[20px] fa-regular fa-heart heart-icon cursor-pointer"
+                ></i>
               </div>
             </div>
             <div
@@ -597,7 +615,7 @@
             newHistory.appendChild(newElement);
           } else {
             let msg =
-              "You don't have enough coin. You need at least 20 coins to call" +
+              "❌ You don't have enough coin. You need at least 20 coins to call" +
               "...";
             alert(msg);
           }
@@ -617,7 +635,7 @@
           const perCard = event.target.closest(".eachCard");
           const serviceNumber = perCard.querySelectorAll("h1")[1].innerText;
           navigator.clipboard.writeText(serviceNumber); // copy straight to clipboard
-          alert("Number Copied: " + serviceNumber);
+          alert("Hotline number copied: " + serviceNumber);
           const copyValue = document.getElementById("copyCounter");
           countCopy += 1;
           copyValue.innerText = countCopy;
