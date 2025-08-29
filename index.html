@@ -18,7 +18,7 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-[rgba(215,240,246,1)]">
+  <body class="bg-[rgba(240,245,255,1)]">
     <!-- border-solid border-red-500 border-2 -->
     <!-- Navbar section -->
     <section>
@@ -51,7 +51,7 @@
           <div
             class="bg-[#00a63e] pl-[20px] pr-[20px] h-[52px] flex justify-center items-center rounded-[50px] text-white font-semibold"
           >
-            <h3>4</h3>
+            <h3 id="copyCounter">0</h3>
             <p class="ml-[10px]">Copy</p>
           </div>
         </div>
@@ -76,10 +76,10 @@
     </section>
 
     <!-- Main section -->
-
+    <!-- bg-[rgba(245, 255, 246, 1)] -->
     <section class="flex justify-center">
       <div
-        class="bg-[rgba(215,240,246,1)] h-auto max-w-[1320px] flex justify-center mt-[48px] mb-[86px] ml-[30px] mr-[30px]"
+        class="h-auto max-w-[1320px] flex justify-center mt-[48px] mb-[86px] ml-[30px] mr-[30px]"
       >
         <div
           id="cards"
@@ -87,7 +87,7 @@
         >
           <!-- Cards started -->
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -98,7 +98,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -124,7 +124,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -133,7 +133,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -144,7 +144,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/police.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -170,7 +170,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -179,7 +179,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -190,7 +190,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -216,7 +216,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -236,7 +236,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -262,7 +262,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -271,7 +271,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -282,7 +282,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/ambulance.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -308,7 +308,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -317,7 +317,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -328,7 +328,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/brac.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -354,7 +354,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -363,7 +363,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -377,7 +377,7 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -403,7 +403,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -412,7 +412,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -423,7 +423,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -449,7 +449,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -458,7 +458,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
+            class="flex flex-col justify-between bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -472,7 +472,7 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart heart-icon"></i>
+                <i class="text-[20px] fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -498,7 +498,7 @@
             <div
               class="ml-[10px] mt-[12px] mr-[10px] mb-[12px] md:mb-[25px] md:ml-[25px] md:mr-[25px] flex justify-between"
             >
-              <button class="btn w-5/11 text-[#5C5C5C]">
+              <button class="btn w-5/11 text-[#5C5C5C] copingBtn">
                 <i class="fa-regular fa-copy"></i>Copy
               </button>
               <button class="btn btn-success w-5/11 text-white">
@@ -508,7 +508,7 @@
           </div>
           <!-- id="historySection" -->
           <div
-            class="bg-white max-h-[1235px] row-span-3 shadow-lg rounded-md overflow-y-auto"
+            class="bg-white max-h-[3800px] lg:max-h-[1235px] row-span-9 lg:row-span-3 shadow-lg rounded-md overflow-y-auto"
           >
             <div
               class="mt-[12px] ml-[10px] mr-[10px] md:mt-[12px] md:ml-[25px] md:mr-[25px] flex flex-col md:flex-row md:justify-between md:items-center"
@@ -552,8 +552,10 @@
         }
       });
 
-      let coinValue = parseInt(document.getElementById("coinNumber").innerText);
-      console.log(coinValue);
+      const coins = document.getElementById("coinNumber");
+      let coinValue = parseInt(coins.innerText);
+      // console.log(coinValue);
+      let coinsValue = 100;
 
       parentCard.addEventListener("click", function (event) {
         if (event.target.classList.contains("btn-success")) {
@@ -562,7 +564,10 @@
           const serviceNumber = perCard.querySelectorAll("h1")[1].innerText;
           // console.log(serviceName);
           // console.log(serviceNumber);
-          if (coinValue >= 20) {
+          if (coinsValue >= 20) {
+            // console.log(coinValue);
+            coinsValue -= 20;
+            coins.innerText = coinsValue;
             let msg =
               "📞 Calling to " + serviceName + " " + serviceNumber + "...";
             alert(msg);
@@ -603,6 +608,20 @@
       const historyContent = document.getElementById("historySection");
       historyClearBtn.addEventListener("click", function () {
         historyContent.innerHTML = "";
+      });
+
+      let countCopy = 0;
+
+      parentCard.addEventListener("click", function (event) {
+        if (event.target.classList.contains("copingBtn")) {
+          const perCard = event.target.closest(".eachCard");
+          const serviceNumber = perCard.querySelectorAll("h1")[1].innerText;
+          navigator.clipboard.writeText(serviceNumber); // copy straight to clipboard
+          alert("Number Copied: " + serviceNumber);
+          const copyValue = document.getElementById("copyCounter");
+          countCopy += 1;
+          copyValue.innerText = countCopy;
+        }
       });
     </script>
   </body>
