@@ -19,7 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-[rgba(215,240,246,1)]">
-    <!-- border-solid border-color-500 border-2 -->
+    <!-- border-solid border-red-500 border-2 -->
     <!-- Navbar section -->
     <section>
       <div
@@ -45,7 +45,7 @@
           <div
             class="mr-[10px] bg-[#41ff6b1a] pl-[20px] pr-[20px] h-[52px] flex justify-center items-center rounded-[50px] font-black"
           >
-            <h3 id="coinNumber">10</h3>
+            <h3 id="coinNumber">100</h3>
             <img class="h-[24px] w-[24px] ml-[10px]" src="./assets/coin.png" />
           </div>
           <div
@@ -87,7 +87,7 @@
         >
           <!-- Cards started -->
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -133,7 +133,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -179,7 +179,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -271,7 +271,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -317,7 +317,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -363,7 +363,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -412,7 +412,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -458,7 +458,7 @@
             </div>
           </div>
           <div
-            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+            class="bg-white h-[400px] max-w-[350px] shadow-lg rounded-md eachCard"
           >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
@@ -506,8 +506,10 @@
               </button>
             </div>
           </div>
-
-          <div class="bg-white h-auto row-span-3 shadow-lg rounded-md">
+          <!-- id="historySection" -->
+          <div
+            class="bg-white max-h-[1235px] row-span-3 shadow-lg rounded-md overflow-y-auto"
+          >
             <div
               class="mt-[12px] ml-[10px] mr-[10px] md:mt-[12px] md:ml-[25px] md:mr-[25px] flex flex-col md:flex-row md:justify-between md:items-center"
             >
@@ -515,20 +517,23 @@
                 <i class="fa-regular fa-clock text-[#5C5C5C]"></i>Call History
               </p>
               <button
+                id="clearHistory"
                 class="btn pl-[36px] pr-[36px] pt-[12px] pb-[12px] rounded-lg mt-[8px] mb-[8px] md:mb-[0px] md:mt-[0px] md:rounded-[50px] bg-[#00a63e] border-none text-white"
               >
                 Clear
               </button>
             </div>
-            <div
-              class="mt-[12px] ml-[10px] mr-[10px] md:mt-[12px] md:ml-[25px] md:mr-[25px] flex flex-col md:flex-row md:justify-between md:items-center bg-[#fafafa] rounded-md"
-            >
-              <div class="pl-[2px]">
-                <h1 class="font-semibold text-[18px]">Fire Service Number</h1>
-                <p class="font-regular text-[#5C5C5C]">999</p>
-              </div>
-              <div class="pr-[2px]">
-                <p>11:36:58 AM</p>
+            <div id="historySection" class="border-solid">
+              <div
+                class="mt-[12px] ml-[10px] mr-[10px] md:mt-[12px] md:ml-[25px] md:mr-[25px] flex flex-col md:flex-row md:justify-between md:items-center bg-[#fafafa] rounded-md"
+              >
+                <div class="pl-[2px]">
+                  <h1 class="font-semibold text-[18px]"></h1>
+                  <p class="font-regular text-[#5C5C5C]"></p>
+                </div>
+                <div class="pr-[2px]">
+                  <p id="liveTime"></p>
+                </div>
               </div>
             </div>
           </div>
@@ -561,6 +566,30 @@
             let msg =
               "📞 Calling to " + serviceName + " " + serviceNumber + "...";
             alert(msg);
+
+            // const currentTime = document.getElementById("liveTime");
+
+            const now = new Date();
+            const timeBD = now.toLocaleTimeString("en-US", {
+              hour12: true,
+              timeZone: "Asia/Dhaka",
+            });
+            // currentTime.innerText = timeBD;
+            //console.log(currentTime);
+            const newElement = document.createElement("div");
+            newElement.innerHTML = `<div
+              class="mt-[12px] ml-[10px] mr-[10px] md:mt-[12px] md:ml-[25px] md:mr-[25px] flex flex-col md:flex-row md:justify-between md:items-center bg-[#fafafa] rounded-md"
+            >
+              <div class="pl-[2px]">
+                <h1 class="font-semibold text-[18px]">${serviceName}</h1>
+                <p class="font-regular text-[#5C5C5C]">${serviceNumber}</p>
+              </div>
+              <div class="pr-[2px]">
+                <p>${timeBD}</p>
+              </div>
+            </div>`;
+            const newHistory = document.getElementById("historySection");
+            newHistory.appendChild(newElement);
           } else {
             let msg =
               "You don't have enough coin. You need at least 20 coins to call" +
@@ -568,6 +597,12 @@
             alert(msg);
           }
         }
+      });
+
+      const historyClearBtn = document.getElementById("clearHistory");
+      const historyContent = document.getElementById("historySection");
+      historyClearBtn.addEventListener("click", function () {
+        historyContent.innerHTML = "";
       });
     </script>
   </body>
