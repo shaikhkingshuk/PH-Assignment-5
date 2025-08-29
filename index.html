@@ -39,13 +39,13 @@
           <div
             class="mr-[10px] bg-[#41ff6b1a] pl-[20px] pr-[20px] h-[52px] flex justify-center items-center rounded-[50px] font-black"
           >
-            <h3>12</h3>
+            <h3 id="countNumber">0</h3>
             <img class="h-[30px] w-[30px] ml-[10px]" src="./assets/heart.png" />
           </div>
           <div
             class="mr-[10px] bg-[#41ff6b1a] pl-[20px] pr-[20px] h-[52px] flex justify-center items-center rounded-[50px] font-black"
           >
-            <h3>421</h3>
+            <h3 id="coinNumber">10</h3>
             <img class="h-[24px] w-[24px] ml-[10px]" src="./assets/coin.png" />
           </div>
           <div
@@ -82,10 +82,13 @@
         class="bg-[rgba(215,240,246,1)] h-auto max-w-[1320px] flex justify-center mt-[48px] mb-[86px] ml-[30px] mr-[30px]"
       >
         <div
-          class="grid grid-flow-col gap-4 grid-rows-9 grid-cols-2 md:grid-rows-5 md:grid-cols-3 lg:grid-rows-3 lg:grid-cols-4"
+          id="cards"
+          class="grid grid-flow-col gap-4 grid-rows-9 grid-cols-2 lg:grid-rows-3 lg:grid-cols-4"
         >
           <!-- Cards started -->
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -95,7 +98,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -129,7 +132,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -139,7 +144,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/police.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -173,7 +178,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -183,7 +190,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -217,7 +224,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -227,7 +236,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -261,7 +270,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -271,7 +282,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/ambulance.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -305,7 +316,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -315,7 +328,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/brac.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -349,7 +362,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -362,7 +377,7 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -396,7 +411,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -406,7 +423,7 @@
                 <img class="h-[32px] w-[32px]" src="./assets/emergency.png" />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -440,7 +457,9 @@
               </button>
             </div>
           </div>
-          <div class="bg-white h-auto max-w-[350px] shadow-lg rounded-md">
+          <div
+            class="bg-white h-auto max-w-[350px] shadow-lg rounded-md eachCard"
+          >
             <div
               class="flex justify-between items-center mt-[12px] mr-[10px] ml-[10px] md:mt-[25px] md:mr-[25px] md:ml-[25px]"
             >
@@ -453,7 +472,7 @@
                 />
               </div>
               <div class="h-[24px] w-[24px]">
-                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-heart heart-icon"></i>
               </div>
             </div>
             <div
@@ -516,5 +535,40 @@
         </div>
       </div>
     </section>
+    <script>
+      const parentCard = document.getElementById("cards");
+
+      const valueId = document.getElementById("countNumber");
+
+      parentCard.addEventListener("click", function (event) {
+        if (event.target.classList.contains("fa-heart")) {
+          let val = parseInt(valueId.innerText);
+          valueId.innerText = val + 1;
+        }
+      });
+
+      let coinValue = parseInt(document.getElementById("coinNumber").innerText);
+      console.log(coinValue);
+
+      parentCard.addEventListener("click", function (event) {
+        if (event.target.classList.contains("btn-success")) {
+          const perCard = event.target.closest(".eachCard");
+          const serviceName = perCard.querySelectorAll("h1")[0].innerText;
+          const serviceNumber = perCard.querySelectorAll("h1")[1].innerText;
+          // console.log(serviceName);
+          // console.log(serviceNumber);
+          if (coinValue >= 20) {
+            let msg =
+              "📞 Calling to " + serviceName + " " + serviceNumber + "...";
+            alert(msg);
+          } else {
+            let msg =
+              "You don't have enough coin. You need at least 20 coins to call" +
+              "...";
+            alert(msg);
+          }
+        }
+      });
+    </script>
   </body>
 </html>
